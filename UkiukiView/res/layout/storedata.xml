@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layoutAccountInput"
+	android:padding="4dip"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+	<WebView android:id="@+id/webview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	/>
+	<LinearLayout
+		android:padding="4dip"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center_horizontal"
+		>
+		<Button android:id="@+id/btnOk"
+			style="@style/ButtonOriginal"
+			android:layout_width="120dip"
+			android:layout_height="wrap_content"
+			android:text="@string/ok"
+			/>
+	</LinearLayout>
+</LinearLayout>

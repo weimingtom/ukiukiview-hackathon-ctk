@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layoutAccountInput"
+	android:padding="4dip"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="8dip"
+		android:textSize="16sp"
+		android:text="@string/account_text"
+		/>
+	<LinearLayout
+		android:padding="8dip"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center_horizontal"
+		>
+		<Button android:id="@+id/btnOk"
+			style="@style/ButtonOriginal"
+			android:layout_width="120dip"
+			android:layout_height="wrap_content"
+			android:text="@string/account_create"
+			/>
+		<Button android:id="@+id/btnCancel"
+			style="@style/ButtonOriginal"
+			android:layout_width="120dip"
+			android:layout_height="wrap_content"
+			android:text="@string/account_login"
+			/>
+	</LinearLayout>
+</LinearLayout>
