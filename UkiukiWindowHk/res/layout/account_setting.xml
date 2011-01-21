@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+<TextView android:id="@+id/NicknameLabel" android:text="@string/label_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/NicknameEdit" android:layout_height="wrap_content" android:layout_below="@+id/NicknameLabel" android:text="" android:layout_width="fill_parent"/>
+<TextView android:id="@+id/PasswordLabel" android:text="@string/label_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/NicknameEdit"/>
+<EditText android:id="@+id/PasswordEdit" android:layout_height="wrap_content" android:layout_below="@+id/PasswordLabel" android:text="" android:layout_width="fill_parent" android:inputType="textPassword"/>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ApplyButton" android:text="@string/btn_apply" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CreateButton" android:text="@string/btn_create_account" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

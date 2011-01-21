@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="wrap_content"
+>
+<LinearLayout
+  android:layout_height="wrap_content" android:layout_width="fill_parent"
+  android:orientation="horizontal"
+  android:paddingRight="10dp"
+  >
+	<CheckBox android:text="AAA" android:id="@+id/GenreCheckBox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1"/>
+	<ImageView android:id="@+id/GenreImageView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/unknown" android:layout_weight="0"/>
+</LinearLayout>
+</RelativeLayout>

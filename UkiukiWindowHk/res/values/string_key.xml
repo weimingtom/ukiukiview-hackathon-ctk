@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="api_key_map_view">Input your key</string>
+<string name="api_key_ukiuki_view">Input your key</string>
+<string name="api_key_recruit">Input your key</string>
+ </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- サービス一覧の初期値 -->
+	<!-- 2010/12/06に取得した値 -->
+	
+	<string name="default_service_id">100</string>
+
+	<string-array name="initial_sid_array">
+		<item>100</item>
+		<item>300</item>
+		<item>400</item>
+	</string-array>
+	
+	
+	<string-array name="initial_service_number_array">
+		<item>SC-001</item>
+		<item>SC-001</item>
+		<item>SC-002</item>
+	</string-array>
+	
+	<string-array name="initial_service_name_array">
+		<item>Hotpepper</item>
+		<item>ぐるなび</item>
+		<item>じゃらん 空室検索</item>
+	</string-array>
+	
+	<string-array name="initial_corporation_array">
+		<item>BrilliantService</item>
+		<item>BrilliantService</item>
+		<item>BrilliantService</item>
+	</string-array>
+	
+	<string-array name="initial_explain_array">
+		<item>Hotpepperのさまざまなサービスをお届けします。</item>
+		<item>周辺飲食店情報を表示します。</item>
+		<item>周辺の空いているホテル情報をお届けします。</item>
+	</string-array>
+	
+	<string-array name="initial_catch_copy_array">
+		<item>Hotpepper</item>
+		<item>グルメ情報検索サイト　ぐるなび</item>
+		<item>じゃらん</item>
+	</string-array>
+	
+	<string-array name="initial_icon_uri_array">
+		<item>http://webservice.recruit.co.jp/banner/hotpepper-m.gif</item>
+		<item>http://apicache.gnavi.co.jp/image/rest/b/api_90_35.gif</item>
+		<item>http://www.jalan.net/jalan/doc/jws/images/jws_88_50_blue.gif</item>
+	</string-array>
+</resources>

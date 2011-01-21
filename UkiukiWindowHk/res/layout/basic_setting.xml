@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/ButtonGroup" android:layout_alignParentBottom="true" android:layout_width="fill_parent">
+	<Button android:text="@android:string/ok" android:id="@+id/OkButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:width="10dp"></Button>
+	<Button android:text="@android:string/cancel" android:id="@+id/CancelButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:width="10dp"></Button>
+</LinearLayout><LinearLayout android:layout_below="@+id/TableLayout01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/LinearLayout01"></LinearLayout>
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/ButtonGroup" android:layout_alignParentTop="true" android:stretchColumns="1">
+	<TableRow>
+		<TextView android:text="@string/label_max_scene_object_num" android:layout_span="3"/>
+	</TableRow>
+	<TableRow>
+		<TextView android:width="@dimen/layout_indent"/>
+		<Spinner android:id="@+id/MaxSceneObjectNumSpinner" android:entries="@array/entries_scene_object_num" android:layout_span="2"/>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="@string/label_default_service" android:layout_span="3"/>
+	</TableRow>
+	<TableRow>
+		<TextView android:width="@dimen/layout_indent"/>
+		<Spinner android:id="@+id/DefaultServiceSpinner" android:layout_span="2"/>
+	</TableRow>
+	<TableRow>
+		<TextView android:width="@dimen/layout_indent" android:layout_span="2"/>
+		<Button android:id="@+id/UpdateServiceList" android:text="@string/btn_update_service_list"/>
+	</TableRow>
+</TableLayout>
+
+</RelativeLayout>

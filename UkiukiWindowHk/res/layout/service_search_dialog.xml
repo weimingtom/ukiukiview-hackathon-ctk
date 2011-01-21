@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:id="@+id/ButtonLayout" android:layout_alignParentRight="true" android:orientation="vertical">
+	<Button android:id="@+id/OkButton" android:text="@android:string/ok" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	<Button android:id="@+id/CancelButton" android:text="@android:string/cancel" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+	<Button android:id="@+id/SelectAllButton" android:text="@string/btn_select_all" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	<Button android:id="@+id/DeselectAllButton" android:text="@string/btn_deselect_all" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/KeywordLayout" android:layout_toLeftOf="@+id/ButtonLayout">
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_keyword"/>
+	<EditText android:id="@+id/KeywordEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>
+<ListView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/ServiceGenreListView" android:layout_toLeftOf="@+id/ButtonLayout" android:layout_below="@+id/KeywordLayout"/>
+
+</RelativeLayout>
