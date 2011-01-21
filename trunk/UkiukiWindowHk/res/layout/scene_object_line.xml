@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="wrap_content"
+>
+<Button android:id="@+id/SceoneObjectCloseButton" android:text="@string/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_notification_clear_all" android:layout_alignParentRight="true"/>
+
+<LinearLayout
+  android:layout_height="wrap_content" android:layout_width="fill_parent"
+  android:orientation="horizontal"
+  android:background="@android:drawable/toast_frame"
+  android:layout_below="@+id/SceoneObjectCloseButton"
+  >
+
+	<ImageView android:id="@+id/SceneObjectImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/unknown"/>
+	<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:layout_width="fill_parent">
+		<TextView android:id="@+id/SceneObjectLabel" android:layout_height="wrap_content" android:width="50dp" android:text="Label" android:layout_width="fill_parent"/>
+		<TextView android:id="@+id/SceneObjectDetail" android:layout_height="wrap_content" android:width="50dp" android:text="Detail" android:layout_width="fill_parent"/>
+	</LinearLayout>
+	<ImageButton android:id="@+id/CommentAddButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_input_add" />
+	<ImageButton android:id="@+id/CommentMoreButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dialog_menu_generic" />
+	<ImageButton android:id="@+id/SceneObjectInfoImageButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_dialog_info" />
+	<ImageButton android:id="@+id/DeleteSceneObjectButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_delete" />
+</LinearLayout>
+</RelativeLayout>

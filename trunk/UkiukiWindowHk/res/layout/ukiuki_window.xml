@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/View01" android:id="@+id/MapScrollView" android:visibility="invisible" android:scrollbars="vertical|horizontal" android:clickable="false">
+</ScrollView>
+
+<RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/UserInterfacePanel">
+	<android.opengl.GLSurfaceView android:id="@+id/View01" android:minHeight="300dp" android:minWidth="300dp" android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+	<ImageView android:id="@+id/LogoGoogleView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:src="@drawable/logo_google" android:layout_alignParentBottom="true"/>
+	<ImageView android:id="@+id/LogoServiceView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:layout_above="@+id/LogoGoogleView"/>
+	<ImageButton android:id="@+id/ZoomInButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_zoom_up" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+	<ImageButton android:id="@+id/ZoomOutButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_zoom_down" android:layout_alignParentBottom="true" android:layout_toLeftOf="@+id/ZoomInButton"/>
+	
+	<LinearLayout android:id="@+id/RightButtonGroup" android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="vertical" android:layout_alignParentRight="true">
+		<ImageButton android:id="@+id/PresentLocationButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_present_location_off"/>
+		<ImageButton android:id="@+id/ServiceSearchButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_search"/>
+		<ImageButton android:id="@+id/DropUki2BallButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_drop_off"/>
+	</LinearLayout>
+	<ImageButton android:id="@+id/MenuOpenCloseButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/btn_menu_open"/>
+
+	<LinearLayout android:id="@+id/StatusGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_toRightOf="@+id/MenuOpenCloseButton">
+		<RelativeLayout android:id="@+id/EssentialStatusLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible">
+			<TextView android:id="@+id/EssentialStatusLabel" android:text="@string/label_essential_status" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+			<ProgressBar android:id="@+id/ProgressBar01" android:layout_below="@+id/EssentialStatusLabel" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/LoginStatusLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible">
+			<TextView android:id="@+id/LoginStatusLabel" android:text="@string/label_login_status" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+			<ProgressBar android:id="@+id/ProgressBar01" android:layout_below="@+id/LoginStatusLabel" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/GetContentsStatusLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible">
+			<TextView android:id="@+id/GetContentsStatusLabel" android:text="@string/label_get_contents_status" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+			<ProgressBar android:id="@+id/ProgressBar02" android:layout_below="@+id/GetContentsStatusLabel" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/GetServiceDataStatusLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible">
+			<TextView android:id="@+id/GetServiceDataStatusLabel" android:text="@string/label_get_service_data_status" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+			<ProgressBar android:id="@+id/ProgressBar03" android:layout_below="@+id/GetServiceDataStatusLabel" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/SubmitStatusLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible">
+			<TextView android:id="@+id/SubmitStatusLabel" android:text="@string/label_submit_status" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+			<ProgressBar android:id="@+id/ProgressBar01" android:layout_below="@+id/SubmitStatusLabel" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<include layout="@layout/scene_object_line" android:layout_above="@+id/LogoGoogleView" android:layout_height="wrap_content" android:id="@+id/SelectedSceneObjectInfo" android:layout_width="wrap_content" android:layout_toLeftOf="@+id/RightButtonGroup" android:layout_alignParentLeft="true" android:visibility="gone"/>
+
+	<TableLayout android:id="@+id/MenuLayout" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_toRightOf="@+id/MenuOpenCloseButton" android:descendantFocusability="beforeDescendants" android:layout_toLeftOf="@+id/RightButtonGroup" android:visibility="gone" android:background="@android:drawable/toast_frame">
+		<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_vertical">
+			<TextView android:text="@string/label_ukiuki_ball" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			<Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:id="@+id/UkiukiBallVisibilitySpinner" android:padding="10dp" android:entries="@array/entries_visibility"/>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_vertical">
+			<TextView android:text="@string/label_service" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			<Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:id="@+id/ServiceSpinner" android:padding="10dp"/>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_vertical">
+			<TextView android:text="@string/map_zoom_level" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			<SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:id="@+id/MapZoomLevelBar" android:padding="10dp"/>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_vertical">
+			<TextView android:text="@string/size_of_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<SeekBar android:layout_height="wrap_content" android:id="@+id/IconSizeBar" android:layout_width="fill_parent" android:layout_weight="1" android:padding="10dp"/>
+		</TableRow>
+	</TableLayout>
+
+</RelativeLayout>
+
+</FrameLayout>

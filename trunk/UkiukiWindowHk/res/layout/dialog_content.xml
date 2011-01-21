@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+	<LinearLayout android:id="@+id/HeaderLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:textSize="20dp" android:text="Title" android:id="@+id/TitleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+		<Button android:text="@string/btn_close" android:id="@+id/CloseButton" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<WebView android:id="@+id/ContentView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/HeaderLayout" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<HorizontalScrollView android:id="@+id/UkiukiBallRadioGroupScroll" android:layout_height="wrap_content" android:layout_width="fill_parent">
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/UkiukiBallRadioGroup" android:orientation="horizontal" android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+	</LinearLayout>
+</HorizontalScrollView>
+
+<LinearLayout android:id="@+id/RightButtonLayout" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:orientation="vertical">
+	<Button android:text="@string/btn_submit" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/SubmitButton"/>
+	<Button android:text="@string/btn_cancel" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/CancelButton"/>
+</LinearLayout>
+
+<EditText android:text="" android:id="@+id/UkiukiBallCommentEdit" android:layout_below="@+id/UkiukiBallRadioGroupScroll" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/RightButtonLayout"/>
+
+</RelativeLayout>

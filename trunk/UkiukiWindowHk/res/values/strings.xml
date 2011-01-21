@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Ukiuki Window</string>
+	<string name="map_zoom_level">Zoom of map</string>
+	<string name="size_of_icon">Size of Icon</string>
+	<string name="title_delete_ukiuki_ball">Deleting</string>
+	<string name="label_essential_status">Essential</string>
+	<string name="label_login_status">Login</string>
+	<string name="label_get_contents_status">Ukiuki</string>
+	<string name="label_get_service_data_status">Service</string>
+	<string name="label_submit_status">Submit</string>
+	<string name="label_nickname">Nickname</string>
+	<string name="label_password">Password</string>
+	<string name="label_ukiuki_ball">Ukiuki ball</string>
+	<string name="label_service">Service</string>
+	<string name="menu_account">Account</string>
+	<string name="menu_setting">Setting</string>
+	<string name="menu_reload">Reload</string>
+	<string name="menu_about">About</string>
+	<string name="about_message">This is a client of Ukiuki View.</string>
+	<string name="label_max_scene_object_num">Max objects num</string>
+	<string name="label_default_service">Default Service</string>
+	<string name="label_keyword">Keyword</string>
+	<string name="label_genre">Genre</string>
+	<string name="msg_confirm_delete_emotion_ball">Do you delete the emotion ball?</string>
+	<string name="msg_account_info_is_not_set">Account info is not set.</string>
+	<string name="msg_login_failed">Login failed.</string>
+	<string name="msg_loging_in_now">Loging in now.</string>
+	<string name="msg_touch_point_to_drop">Touch a point to drop.</string>
+	<string name="msg_submitting_emotion_ball_failed">Submitting emotion ball failed.</string>
+	<string name="msg_deleting_emotion_ball_succeed">Deleting emotion ball succeed.</string>
+	<string name="msg_deleting_emotion_ball_failed">Deleting emotion ball failed.</string>
+	<string name="msg_registering">Registering now.</string>
+	<string name="msg_registering_account_succeed">Registering account succeed.</string>
+	<string name="msg_registering_account_failed">Registering account failed.</string>
+	<string name="msg_downloading_service_info_now">Downloading service info now.</string>
+	<string name="msg_downloading_service_info_succeed">Downloading service info succeed.</string>
+	<string name="msg_downloading_service_info_failed">Downloading service info failed.</string>
+	<string name="msg_downloading_essential_info_failed">Downloading essential info failed.</string>
+	<string name="msg_downloading_essential_info_now">Downloading essential info now.</string>
+	<string name="btn_submit">Submit</string>
+	<string name="btn_cancel">Cancel</string>
+	<string name="btn_apply">Apply</string>
+	<string name="btn_create_account">Create Account</string>
+	<string name="btn_update_service_list">Update Service List</string>
+	<string name="btn_close">Close</string>
+	<string name="btn_select_all">Select all</string>
+	<string name="btn_deselect_all">Deselect all</string>
+	
+	<string name="item_invisible">Invisible</string>
+	
+	<string-array name="entries_visibility">
+		<item>Invisible</item>
+		<item>Visible</item>
+	</string-array>
+	<string-array name="entries_scene_object_num">
+		<item>50</item>
+		<item>100</item>
+		<item>200</item>
+		<item>500</item>
+	</string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ウキウキWindow</string>
+	<string name="map_zoom_level">マップの縮尺</string>
+	<string name="size_of_icon">アイコンのサイズ</string>
+	<string name="title_delete_ukiuki_ball">感情玉の削除</string>
+	<string name="label_essential_status">必須情報</string>
+	<string name="label_login_status">ログイン</string>
+	<string name="label_get_contents_status">ウキウキ</string>
+	<string name="label_get_service_data_status">サービス</string>
+	<string name="label_submit_status">投稿中</string>
+	<string name="label_nickname">ニックネーム</string>
+	<string name="label_password">パスワード</string>
+	<string name="label_ukiuki_ball">感情玉</string>
+	<string name="label_service">サービス</string>
+	<string name="menu_account">アカウント</string>
+	<string name="menu_setting">設定</string>
+	<string name="menu_reload">再読み込み</string>
+	<string name="menu_about">About</string>
+	<string name="about_message">ウキウキViewのクライアントアプリです。</string>
+	<string name="label_max_scene_object_num">最大オブジェクト表示数</string>
+	<string name="label_default_service">標準のサービス</string>
+	<string name="label_keyword">キーワード</string>
+	<string name="label_genre">ジャンル</string>
+	<string name="msg_confirm_delete_emotion_ball">本当に削除しますか？</string>
+	<string name="msg_account_info_is_not_set">アカウント情報が未設定です。</string>
+	<string name="msg_login_failed">ログインに失敗しました。</string>
+	<string name="msg_loging_in_now">ログイン処理中です。</string>
+	<string name="msg_touch_point_to_drop">感情玉を置く場所を指定してください。</string>
+	<string name="msg_submitting_emotion_ball_failed">感情玉の投稿に失敗しました。</string>
+	<string name="msg_deleting_emotion_ball_succeed">感情玉を削除しました。</string>
+	<string name="msg_deleting_emotion_ball_failed">感情玉の削除に失敗しました。</string>
+	<string name="msg_registering">登録中</string>
+	<string name="msg_registering_account_succeed">アカウントの登録に成功しました。</string>
+	<string name="msg_registering_account_failed">アカウントの登録に失敗しました。</string>
+	<string name="msg_downloading_service_info_now">サービス情報を取得中です。</string>
+	<string name="msg_downloading_service_info_succeed">サービス情報の取得に成功しました。</string>
+	<string name="msg_downloading_service_info_failed">サービス情報の取得に失敗しました。</string>
+	<string name="msg_downloading_essential_info_failed">必須情報の取得に失敗しました。</string>
+	<string name="msg_downloading_essential_info_now">必須情報の取得中です。</string>
+	<string name="btn_submit">投稿</string>
+	<string name="btn_cancel">キャンセル</string>
+	<string name="btn_apply">適用</string>
+	<string name="btn_create_account">新規登録</string>
+	<string name="btn_update_service_list">サービス一覧を更新</string>
+	<string name="btn_close">閉じる</string>
+	<string name="btn_select_all">全て選択</string>
+	<string name="btn_deselect_all">全て選択解除</string>
+	
+	<string name="item_invisible">非表示</string>
+	
+	<string-array name="entries_visibility">
+		<item>非表示</item>
+		<item>表示</item>
+	</string-array>
+	<string-array name="entries_scene_object_num">
+		<item>50</item>
+		<item>100</item>
+		<item>200</item>
+		<item>500</item>
+	</string-array>
+</resources>
