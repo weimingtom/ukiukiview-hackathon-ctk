@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/viewTransparent"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentRight="true"
+>
+	<ImageButton android:id="@+id/btnJoy"
+		style="@style/ButtonTransparent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/joy"
+		/>
+	<ImageButton android:id="@+id/btnAngry"
+		style="@style/ButtonTransparent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/angry"
+		/>
+	<ImageButton android:id="@+id/btnSad"
+		style="@style/ButtonTransparent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/sad"
+		/>
+</LinearLayout>

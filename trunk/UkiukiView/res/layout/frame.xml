@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<jp.co.brilliantservice.app.openar.view.CameraView
+		android:id="@+id/viewCamera"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	/>
+	<!-- ImageView android:id="@+id/imageDemo"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/screen"
+	/-->
+	<jp.co.brilliantservice.app.openar.view.DataView
+		android:id="@+id/viewData"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	/>
+	<jp.co.brilliantservice.app.openar.view.ArMapView
+		android:id="@+id/viewMap"
+		android:apiKey="00PR49CMA76FHgxl9dVSvm8-GteMcjCNoOLXCfw"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"
+	/>
+	<jp.bs.app.ukiukiview.CompassView android:id="@+id/compass"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|left"
+	/>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/news3"
+		/>
+	<jp.co.brilliantservice.app.openar.view.TransparentPanel
+		android:id="@+id/viewTransparent"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	>
+		<EditText android:id="@+id/editSearch"
+			android:layout_width="300dip"
+			android:layout_height="48dip"
+			android:singleLine="true"
+			android:textSize="20sp"
+			/>
+		<ImageButton android:id="@+id/btnSearch"
+			style="@style/ButtonTransparent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/ic_menu_search"
+			/>
+	</jp.co.brilliantservice.app.openar.view.TransparentPanel>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	>
+		<LinearLayout
+			android:id="@+id/viewTransparent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+		>
+			<ImageButton android:id="@+id/btnSetting"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_menu_preferences"
+				/>
+			<ImageButton android:id="@+id/btnMyLocation"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_menu_mylocation_mode"
+				/>
+			<ImageButton android:id="@+id/btnToggle"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_menu_mapmode"
+				/>
+			<ImageButton android:id="@+id/btnJoy"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/joy"
+				/>
+			<ImageButton android:id="@+id/btnAngry"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/angry"
+				/>
+			<ImageButton android:id="@+id/btnSad"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/sad"
+				/>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/viewZoomButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_alignParentRight="true"
+		>
+			<ImageButton android:id="@+id/btnPlayPause"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/pause"
+				/>
+			<ImageButton android:id="@+id/btnZoomPlus"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/plus"
+				/>
+			<ImageButton android:id="@+id/btnZoomMinus"
+				style="@style/ButtonTransparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/minus"
+				/>
+		</LinearLayout>
+	</RelativeLayout>
+	<ImageView android:id="@+id/imageSplash"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/splash"
+	/>
+</FrameLayout>

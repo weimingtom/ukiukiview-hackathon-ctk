@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">UkiukiView</string>
+	<string name="register_account">Register Account</string>
+	<string name="login_account">Login Account</string>
+	<string name="username">user name</string>
+	<string name="password">password</string>
+	<string name="email">email</string>
+	<string name="summary_username">Your user name of UkiukiView</string>
+	<string name="summary_password">Your password of UkiukiView</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="settings">Settings</string>
+	<string name="dialog_register">Register account...</string>
+	<string name="dialog_login">Login...</string>
+	<string name="dialog_post">Posting...</string>
+	<string name="dialog_deleting">Deleting...</string>
+	<string name="toast_no_address_match">Place called "%s" was not found.</string>
+	<string name="toast_failed_to_register_duplicated">Already used user name.</string>
+	<string name="toast_failed_to_register">Register account failed. Please try again.</string>
+	<string name="toast_failed_to_login">Login failed.</string>
+	<string name="toast_failed_to_post">failed to post.</string>
+	<string name="toast_failed_to_delete">failed to delete.</string>
+	<string name="title_create_or_login">Account required</string>
+	<string name="account_text">The account is required to post emotion balls.</string>
+	<string name="account_notice">Sorry, you can not rigister account with multi byte characters.</string>
+	<string name="account_create">Register</string>
+	<string name="account_login">Login</string>
+	<string name="edit_text_post">Post</string>
+	<string name="edit_text_reply">Reply</string>
+	<string name="edit_text_delete">Delete</string>
+	<string name="dialog_notice_title">New version</string>
+	<string name="dialog_notice_body">There is a new version of this client. Please install.</string>
+</resources>
